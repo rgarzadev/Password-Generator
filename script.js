@@ -8,22 +8,22 @@ generateBtn.addEventListener("click", writePassword);
 
 // Create character string variables
 
-var char = "~!@#$%&-+=_";
+var sym = "~!@#$%&-+=_";
 var number = "0123456789";
-var upperLet = "QWERTYUIOPASDFGHJKLZXCVBNM"
-var lowerLet = "qwertyuiopasdfghjklzxcvbnm"
+var upperLet = "QWERTYUIOPASDFGHJKLZXCVBNM";
+var lowerLet = "qwertyuiopasdfghjklzxcvbnm";
 
 // User inputs boolean values
 
 function generatePassword() {
-  var confirmChar = confirm("Do you want special characters in your password?");
+  var confirmSym = confirm("Do you want symbols in your password?");
   var confirmNum = confirm("Do you want numbers in your password?");
   var confirmUpperLet = confirm("Do you want upper case letters in your password?");
   var confirmLowerLet = confirm("Do you want lower case letters in your password?");
 
-  while(confirmChar === false && confirmNum === false && confirmUpperLet === false && confirmLowerLet === false){
+  while(confirmSym === false && confirmNum === false && confirmUpperLet === false && confirmLowerLet === false){
     alert("You must choose at least one");
-      confirmChar = confirm("Do you want special characters in your password?");
+      confirmSym = confirm("Do you want symbols in your password?");
       confirmNum = confirm("Do you want numbers in your password?");
       confirmUpperLet = confirm("Do you want upper case letters in your password?");
       confirmLowerLet = confirm("Do you want lower case letters in your password?");
@@ -44,8 +44,8 @@ function generatePassword() {
 
   var passwordVar = ""
 
-  if (confirmChar) {
-    passwordVar += char
+  if (confirmSym) {
+    passwordVar += sym
   }
 
   if (confirmNum) {

@@ -4,8 +4,8 @@ Password Generator
 
 ## Project Links:
 
-Github Pages: <br>
-Github Repository:
+Github Pages: https://rgarzadev.github.io/Password-Generator/<br>
+Github Repository: https://github.com/rgarzadev/Password-Generator
 
 ### Description:
 
